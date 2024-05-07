@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+
+    /* Set background image for the body */
+    body {
+      background-image: url('b.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Header styles */
+    .header {
+      background-color: grey;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      margin-bottom: 20px; /* Add space below header */
+      font-size: 30px;
+    }
+
+    /* Logo styles */
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      top: 110px; /* Adjusted top position to accommodate header height */
+      left: 0;
+      background-color: gray;
+      padding-top: 20px;
+    }
+    /* Sidebar link styles */
+    .sidebar a {
+      padding: 5px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      display: block;
+      border: 1px solid #343a40; /* Add border for frame-like effect */
+      margin-bottom: 5px; /* Add margin between items */
+      border-radius: 2px; /* Add rounded corners */
+      background-color: white; /* Add background color */
+    }
+    /* Sidebar link hover styles */
+    .sidebar a:hover {
+      background-color: #495057;
+      color: white;
+    }
+
+    /* Content area styles */
+    .content {
+      margin-left: 250px; /* Adjusted margin to accommodate wider sidebar */
+      padding: 20px;
+    }
+
+    /* Card styles */
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    
+  <!-- Header -->
+  <div class="header">
+    <img src="logo.jpg" alt="College Logo" class="logo">
+    Jaywantrao Sawant College of Engineering
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="dash.html">Dashboard</a> <!-- Link to Dashboard -->
+    <a href="stulogin.html">Students-login</a> <!-- Link to Student Login -->
+    <a href="teacher.html">Teachers-login</a> <!-- Link to Teacher Login -->
+    <a href="setting.html">Settings</a> <!-- Link to Settings -->
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Students</h5>
+              <p class="card-text">500</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Teachers</h5>
+              <p class="card-text">50</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Courses</h5>
+              <p class="card-text">30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
